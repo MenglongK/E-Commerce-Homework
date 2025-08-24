@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white"
+  >
+    <header>
+      <nav class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between h-16 items-center">
+            <!-- Logo -->
+            <a href="../index.html"
+              ><div
+                class="flex-shrink-0 text-white text-2xl font-bold uppercase"
+              >
+                Torn Samai
+              </div></a
+            >
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 text-white font-medium">
+              <a
+                href="./pages/product.html"
+                class="hover:text-yellow-300 transition"
+                >Product</a
+              >
+              <a href="#" class="hover:text-yellow-300 transition">Contact</a>
+              <a href="#" class="hover:text-yellow-300 transition">About</a>
+            </div>
+
+            <!-- Desktop Button -->
+            <div class="hidden md:block">
+              <a
+                href="#"
+                class="bg-white text-indigo-700 px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold"
+              >
+                Get Started
+              </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+              <button
+                id="menu-toggle"
+                class="text-white focus:outline-none text-2xl"
+              >
+                ☰
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden px-4 pb-4 space-y-2 text-white font-medium"
+        >
+          <a href="#" class="block hover:text-yellow-300 transition">Home</a>
+          <a href="#" class="block hover:text-yellow-300 transition">About</a>
+          <a href="#" class="block hover:text-yellow-300 transition"
+            >Services</a
+          >
+          <a href="#" class="block hover:text-yellow-300 transition">Contact</a>
+          <a
+            href="#"
+            class="block bg-white text-indigo-700 text-center px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold mt-2"
+          >
+            Get Started
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="mx-5 my-5">
+        <h2 class="text-3xl uppercase tracking-[5px] font-semibold pb-5 mx-5">Product</h2>
+        <div id="getAllProduct" class="grid grid-cols-4 gap-10"></div>
+      </section>
+    </main>
+    <script src="../script/product.js"></script>
+  </body>
+</html>
