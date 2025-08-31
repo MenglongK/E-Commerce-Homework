@@ -15,17 +15,20 @@
       }
     </style>
   </head>
-  <body>
+  <body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
     <header>
-      <nav
-        class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 shadow-lg"
-      >
+      <nav class="bg-purple-900/30 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between h-16 items-center">
             <!-- Logo -->
-            <a href="./index.html"
+            <a class="flex items-center gap-2 group" href="./index.html"
               ><div
-                class="flex-shrink-0 text-white text-2xl font-bold uppercase"
+                class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition duration-500"
+              >
+                <span class="text-xl font-bold text-white">TS</span>
+              </div>
+              <div
+                class="flex-shrink-0 text-2xl font-bold uppercase hover:text-yellow-300 bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent"
               >
                 Torn Samai
               </div></a
@@ -69,12 +72,9 @@
           id="mobile-menu"
           class="md:hidden hidden px-4 pb-4 space-y-2 text-white font-medium"
         >
-          <a href="#" class="block hover:text-yellow-300 transition">Home</a>
-          <a href="#" class="block hover:text-yellow-300 transition">About</a>
-          <a href="#" class="block hover:text-yellow-300 transition"
-            >Services</a
-          >
-          <a href="#" class="block hover:text-yellow-300 transition">Contact</a>
+          <a href="./pages/product.html" class="block hover:text-yellow-300 transition">Product</a>
+          <a href="./pages/contact.html" class="block hover:text-yellow-300 transition">Contact</a>
+          <a href="./pages/about.html" class="block hover:text-yellow-300 transition">About</a>
           <a
             href="#"
             class="block bg-white text-indigo-700 text-center px-4 py-2 rounded-xl hover:bg-yellow-300 transition-all font-semibold mt-2"
@@ -86,13 +86,14 @@
     </header>
     <main>
       <!-- hero section -->
-      <section
-        class="w-full flex items-center justify-center min-h-screen bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500"
-      >
+      <section class="w-full flex items-center justify-center min-h-screen">
         <!-- Overlay for better text visibility -->
         <div class="inset-0 bg-black bg-opacity-50"></div>
 
         <!-- Content -->
+        <div
+          class="absolute top-40 right-1/9 md:w-80 md:h-80 w-30 h-30 bg-pink-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"
+        ></div>
         <div
           class="relative z-10 container mx-auto px-4 text-center text-white"
         >
@@ -124,6 +125,9 @@
           </p>
 
           <!-- CTA Button -->
+          <div
+            class="absolute top-40 left-1 md:w-80 md:h-80 w-30 h-30 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"
+          ></div>
           <div
             class="flex justify-center items-center mt-8"
             data-aos="fade-up"
