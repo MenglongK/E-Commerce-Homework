@@ -27,7 +27,7 @@ async function fetchProduct() {
       </p>
       <div class="flex items-center">
         <span class="text-white">Rating</span>
-        <span class="mr-2 ml-3 rounded bg-yellow-200 px-2.5 py-0.5 text-xs font-semibold text-black">${product.rating.rate}</span>
+        <span class="mr-2 ml-3 rounded bg-yellow-300 px-2.5 py-0.5 text-xs font-semibold text-black">${product.rating.rate}</span>
       </div>
     </div>
     <a href="#" class="flex items-center justify-center rounded-md bg-gray-300 px-5 py-2.5 text-center text-sm font-medium text-black md:hover:bg-yellow-300 hover:text-black focus:outline-none focus:ring-4 focus:ring-blue-300">
