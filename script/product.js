@@ -4,7 +4,6 @@ const mobileMenu = document.getElementById("mobile-menu");
 toggle.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
-
 const BASE_URL = "https://fakestoreapi.com/";
 const getAllProduct = document.getElementById("getAllProduct");
 let card = "";
@@ -14,7 +13,7 @@ async function fetchProduct() {
   data.map((product) => {
     card += `
         <div class="relative m-auto flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white/15 shadow-md md:hover:scale-103 duration-500 hover:shadow-blue-400 backdrop-blur-md">
-  <a class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+  <a id="getProductById" class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
     <img class="object-cover m-auto md:hover:scale-105 duration-500" src=${product.image} alt=${product.title} />
   </a>
   <div class="mt-4 px-5 pb-5">
